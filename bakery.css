@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color:rgb(113, 113, 239);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 30px 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+/* Hero Section */
+.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.accent-text {
+    color: #ff9d2e; /* Orange accent color */
+    font-style: italic;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #ff9d2e;
+    color: #2b1717;
+}
+
+.btn-secondary {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 70%;
+    height: auto;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+    nav ul {
+        display: none; 
+    }
+    .cta-buttons {
+        justify-content: center;
+    }
+}
